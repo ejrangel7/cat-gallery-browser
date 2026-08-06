@@ -21,19 +21,35 @@ A lightweight, read-only web application that retrieves random cat images from t
 
 ## Run locally
 
-No build process or package installation is required.
+This is a client-side application. Clone the repository and serve the project directory with any local static web server. Node.js and Python are not part of the application; they are only optional tools for starting a local server. Use either option below.
 
-1. Clone the repository.
-2. Serve the project directory with a local static server.
-3. Open the local URL in your browser.
+### Option 1 — Node.js (recommended)
 
-Example with Python:
+If Node.js and npm are installed:
 
 ```bash
-python -m http.server 8000
+npx serve .
 ```
 
-Then visit [http://localhost:8000](http://localhost:8000).
+Open the local address displayed in the terminal, commonly [http://localhost:3000](http://localhost:3000).
+
+### Option 2 — Python
+
+On Windows, if Python is installed:
+
+```bash
+py -m http.server 8000
+```
+
+On macOS or Linux, if Python 3 is installed:
+
+```bash
+python3 -m http.server 8000
+```
+
+Then open [http://localhost:8000](http://localhost:8000).
+
+Only one of these options is required.
 
 ## Security design
 
